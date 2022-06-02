@@ -1,0 +1,112 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background: #303030;
+ 		
+}
+marquee{
+font-size:72px;
+color: #44dbc5;
+}
+
+p,h1,h2,h3,h4,h5,h6{color: #fff;
+	font-size: 18px;
+}
+a{color: orangered;}
+
+.homm p{
+	padding-top: 100px;
+}
+
+ul{
+	display: inline-block;
+	display: inline-flex;
+	float: right;
+}
+li{
+	margin-left: 30px;
+    color: orange;}
+#CONTACT{
+	grid-template-rows: 300px 340px;
+	column-gap: 3rem;
+	justify-content: center;
+	align-items: center;
+}
+
+header{border-style: double;}
+.content1,.content2,.content3,.content4,footer,.homm,.photo{
+	border-style: hidden;
+
+}
+
+.me{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: "content1 content4" "content2 content4" "content3 content4";
+	height: 80vh;
+}
+section{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: "photo homm";
+	width: 100vw;
+}
+.photo{
+	grid-area: photo;
+}
+.homm{
+	grid-area: homm;
+}
+.content1{grid-area: content1;}
+.content2{grid-area: content2;}
+.content3{grid-area: content3;}
+.content4{grid-area: content4;}
+header{background-image: url(head.jpg);}
+footer{  
+background-image: url(footer.jpg);}
+.foot{float:}
+button{
+	background-color: darkcyan;
+	font-weight: bold;
+	height: 50px;
+	width: 100px;
+}
+.form-control
+	{
+		background: transparent;
+		border: 1px solid #28a7e9;
+		border-radius: 2px;
+		box-shadow: none;
+		color: #fff;
+		margin-top: 6px;
+		margin-bottom: 16px;
+	}
+	input
+	{
+		height: 50px;
+	}
+input[type="submit"]
+	{
+		background: #28a7e9;
+		font-weight: bold;
+		-webkit-transition: all 0.4s ease-in-out;
+		        transition: all 0.4s ease-in-out;
+	}
+input[type="submit"]:hover
+	{
+		background: transparent;
+	}
+
+article{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: "head head head" "cont1 cont2 cont3" "foo foo foo";
+	grid-template-rows: 100px 1fr 100px;
+	height: 100vh;
+}
+.head{grid-area: head; border-style: double;}
+.cont1{grid-area: cont1; border-style: do;}
+.cont2{grid-area: cont2; border-style: d;}
+.cont3{grid-area: cont3; border-style: d;}
+.foo{grid-area: foo; border-style: double;}
